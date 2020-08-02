@@ -1,6 +1,7 @@
 ---
 title: My Second Post
 layout: default
+coverimage: assets/img/blog/1.jpg
 ---
 
-Some sample content...
+This is a placeholder for my second post
