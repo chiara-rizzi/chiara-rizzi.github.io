@@ -1152,7 +1152,7 @@ footer .copyright {
   width: 70%;
 }
 
-.post .post-content .post-date,
+.post .post-content .post-date .post-author,
 .post .post-content .post-words {
   font-size: 12px;
 }
