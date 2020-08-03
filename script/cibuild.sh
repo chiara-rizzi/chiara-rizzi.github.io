@@ -17,7 +17,8 @@ mkdir _site
 git clone https://${GH_TOKEN}@github.com/chiara-rizzi/chiara-rizzi.github.io.git --branch gh-pages _site
 
 # build with Jekyll into "_site"
-jekyll serve
+bundle install
+bundle exec jekyll build
 
 # push
 cd _site
