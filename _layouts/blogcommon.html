@@ -94,7 +94,7 @@
     <div class="blog-page area-padding">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="left">
             <div class="page-head-blog">
               <div class="single-blog-page">
                 <!-- search option start -->
@@ -228,8 +228,10 @@
             </div>
           </div>
           <!-- End left sidebar -->
-          <div class="col-md-8 col-sm-8 col-xs-12">
-            {{ content }}
+          <div class="col-md-8 col-sm-8 col-xs-12" id="right">
+            <div class="content-box clearfix">
+              {{ content }}
+            </div>
           </div>
         </div>
       </div>

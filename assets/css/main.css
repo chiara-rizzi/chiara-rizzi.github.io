@@ -913,6 +913,7 @@ table tfoot td {
 
 /* - - - - - - - - - - Home Page Styles - - - - - - - - - - */
 .sidebar {
+  overflow: scroll;        
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -926,8 +927,8 @@ table tfoot td {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: fixed;
-  top: 0;
+  position: relative;
+  top: 0px;
   left: 0;
   bottom: 0;
   width: 240px;
@@ -1001,8 +1002,9 @@ table tfoot td {
 }
 
 .content-box {
+  position: absolute;
   padding: 20px;
-  padding-left: 260px;
+  padding-left: 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1395,6 +1397,7 @@ a.newer-posts:hover {
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .sidebar {
+    overflow: scroll;
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1482,3 +1485,16 @@ a.newer-posts:hover {
     font-size: 21px;
   }
 }
+
+#left {
+    float: left;
+    height: 800px;
+    overflow: scroll;
+    padding-right: 20px;
+}
+#right {
+    float: left;
+    overflow: scroll;
+}
+
+
