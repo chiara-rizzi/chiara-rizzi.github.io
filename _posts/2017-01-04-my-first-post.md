@@ -1,7 +1,8 @@
 ---
-title: My First Post
+title: My Statistics Post
 layout: default
 coverimage: assets/img/blog/1.jpg
+tags: statistics
 ---
 
 Some sample content...

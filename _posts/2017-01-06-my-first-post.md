@@ -1,7 +1,9 @@
 ---
-title: My First Post
+title: My AI Post
 layout: default
 coverimage: assets/img/blog/1.jpg
+tag: [artificial-intelligence]
+description: AI bla bla bla
 ---
 
 Some sample content...
