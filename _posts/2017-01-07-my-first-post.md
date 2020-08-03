@@ -1,7 +1,7 @@
 ---
 title: Statistics and NN
 layout: default
-coverimage: assets/img/blog/1.jpg
+coverimage: /assets/img/blog/1.jpg
 tags: [statistics, neural-networks, artificial-intelligence]
 ---
 

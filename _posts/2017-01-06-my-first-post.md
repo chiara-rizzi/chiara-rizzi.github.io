@@ -1,7 +1,7 @@
 ---
 title: My AI Post
 layout: default
-coverimage: assets/img/blog/1.jpg
+coverimage: /assets/img/blog/1.jpg
 tag: [artificial-intelligence]
 description: AI bla bla bla
 ---

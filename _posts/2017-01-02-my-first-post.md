@@ -1,7 +1,7 @@
 ---
 title: NN Post, AI and Stat
 layout: default
-coverimage: assets/img/blog/1.jpg
+coverimage: /assets/img/blog/1.jpg
 tags: [neural-networks, artificial-intelligence, statistics]
 description: This is a post about NN
 ---

@@ -1,7 +1,7 @@
 ---
 title: My First Post
 layout: default
-coverimage: assets/img/blog/1.jpg
+coverimage: /assets/img/blog/1.jpg
 ---
 
 Some sample content...
