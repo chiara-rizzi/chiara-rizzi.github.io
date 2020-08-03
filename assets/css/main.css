@@ -1166,6 +1166,9 @@ footer .copyright {
   text-decoration: none;
   color: #263959;
 }
+.post .post-content .post-title a:hover {
+  color: #E8910B;
+}
 
 .post .post-content p {
   margin-top: 0;
