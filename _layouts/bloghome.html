@@ -4,48 +4,24 @@ layout: blogcommon
 
 {{ content }}
 
-{% for post in site.posts %}
-<!-- Start single blog -->
-{% if forloop.index < 2 %}
-<div class="col-md-8 col-sm-8 col-xs-12">
-{% endif %}
-{% if forloop.index > 1 %}
-<div class="col-md-12 col-sm-12 col-xs-12">
-{% endif %}
-  <div class="row">              
-    <div class="col-md-12 col-sm-12 col-xs-12">
-      <div class="single-blog">
-        <div class="single-blog-img">
-          <a href={{ post.url }}>
-            <img src={{ post.coverimage }} alt="">
-          </a>
-        </div>
-        <div class="blog-meta">
-          <span class="comments-type">
-            <i class="fa fa-comment-o"></i>
-            <a href="#">11 comments</a>
-          </span>
-          <span class="date-type">
-            <i class="fa fa-calendar"></i>{{ post.date | date: "%b %-d, %Y" }}
-          </span>
-        </div>
-        <div class="blog-text">
-          <h4>
-            <a href="#">{{ post.title }}</a>
-          </h4>
-          <p>
-            {{ post.content | truncate: '100' }}
-          </p>
-        </div>
-        <span>
-          <a href={{ post.url }} class="ready-btn">Read more</a>
-        </span>
-      </div>
-    </div>
-    <!-- End single blog -->
-    {% endfor %}
 
-    <!-- End single blog -->
+  {% for post in site.posts %}
+  <article class="post">
+    {% if post.coverimage %}
+    <a class="post-thumbnail" style="background-image: url({{post.coverimage}})" href="{{post.url | prepend: site.baseurl}}"></a>
+    {% else %}
+    {% endif %}
+    <div class="post-content">
+      <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+      <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
+      <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+      <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
+    </div>
+  </article>
+  <!-- End single blog -->
+  {% endfor %}    
+
+<!-- End single blog -->
 <div class="blog-pagination">
   <ul class="pagination">
     <li><a href="#">&lt;</a></li>

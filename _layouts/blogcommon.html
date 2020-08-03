@@ -26,6 +26,7 @@
   <link href="/assets/vendor/venobox/venobox.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
+  <link href="/assets/css/main.css" rel="stylesheet"> <!-- from flexible-jekyll -->
   <link href="/assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
@@ -114,7 +115,7 @@
                   <input type="submit" value="search">
                 </form>
                 -->
-                <h4>Search</h4>
+                <h4>Search in the blog</h4>
                 {% include search-lunr.html %}
                 <!-- search option end -->
               </div>
@@ -227,9 +228,9 @@
             </div>
           </div>
           <!-- End left sidebar -->
-
-   {{ content }}
-
+          <div class="col-md-8 col-sm-8 col-xs-12">
+            {{ content }}
+          </div>
         </div>
       </div>
     </div><!-- End Blog Page -->
