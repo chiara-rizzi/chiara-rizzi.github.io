@@ -1,8 +1,662 @@
----
-layout: bloghome
-pagination:
-  enabled: true
-  category: datacareteam
----
+<!DOCTYPE html>
+<html lang="en">
 
-Our posts about DataCareTeam projects. 
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DataCareTeam Blog</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/assets/img/favicon.png" rel="icon">
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/assets/vendor/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+  <link href="/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="/assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets/css/main.css" rel="stylesheet"> <!-- from flexible-jekyll -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: eBusiness - v2.1.1
+  * Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex">
+
+      <div class="logo mr-auto">
+        <!-- <h1 class="text-light"><a href="index.html"><span>e</span>DataCareTeam</a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="/index.html"><img src="/assets/img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="/index.html#header">Home</a></li>
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#services">Services</a></li>
+          <!-- <li><a href="#team">Team</a></li> -->
+          <li><a href="/index.html#portfolio">Physics&Data</a></li>
+          <!--  ===== Comment out link to blog ==== --> 
+          <li class="active"><a href="/blog/index.html">Blog</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Blog Header ======= -->
+    <div class="reviews-area" style="background-image: url('/assets/img/slider/sliderblog.jpg')"> 
+      <div class="row">
+        <div class="col-lg-12">
+          <div><p><br></p> </div>
+          <div><p><br></p> </div>
+          <div><p><br></p> </div>
+            <div class="text-center">
+              <div class="header-bottom">
+                <div class="hidden-xs wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                  <a href="index.html"><img src="/assets/img/logo.png" alt="" style="max-width:60%;" class="img-fluid"></a>
+                </div>
+                <div class="wow animate__fadeIn animate__animated" data-wow-duration="2s" data-wow-delay="1s">
+                  <h1 class="title2">The Blog</h1>
+                </div>
+              </div> 
+            </div>
+          <div><p></p> </div>
+          </div>
+      </div>
+    </div>
+    <!-- End Blog Header 
+
+    <!-- ======= Blog Page ======= -->
+    <div class="blog-page area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="left">
+            <div class="page-head-blog">
+              <div class="single-blog-page">
+                <!-- search option start -->
+                <!--
+                <form action="/search.html" method="get">
+                  <div class="search-option">
+                    <input type="text" id="search-box" name="query" placeholder="Search...">
+                    <button class="button" type="submit">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </form> 
+                -->
+                <!--
+                <form action="/search.html" method="get">
+                  <label for="search-box">Search</label>
+                  <input type="text" id="search-box" name="query">
+                  <input type="submit" value="search">
+                </form>
+                -->
+                <h4>Search in the blog</h4>
+                <script src="/js/lunr.js"></script>
+
+<script>
+
+var documents = [{
+    "id": 0,
+    "url": "/",
+    "title": "DataCareTeam",
+    "body": "DataCareTeamContent is written in Markdown. Plain text format allows you to focus on your content. "
+    }, {
+    "id": 1,
+    "url": "/blog/physics/index.html",
+    "title": "",
+    "body": "Our posts about Physics-related topics. "
+    }, {
+    "id": 2,
+    "url": "/blog/physics/page2/index.html",
+    "title": " - page 2",
+    "body": "Our posts about Physics-related topics. "
+    }, {
+    "id": 3,
+    "url": "/blog/physics/page3/index.html",
+    "title": " - page 3",
+    "body": "Our posts about Physics-related topics. "
+    }, {
+    "id": 4,
+    "url": "/blog/datacareteam/index.html",
+    "title": "",
+    "body": "Our posts about DataCareTeam projects. "
+    }, {
+    "id": 5,
+    "url": "/blog/datascience/index.html",
+    "title": "",
+    "body": "Our posts about Data-science topics. "
+    }, {
+    "id": 6,
+    "url": "/blog/index.html",
+    "title": "",
+    "body": "All of our posts. "
+    }, {
+    "id": 7,
+    "url": "/blog/page2/index.html",
+    "title": " - page 2",
+    "body": "All of our posts. "
+    }, {
+    "id": 8,
+    "url": "/blog/page3/index.html",
+    "title": " - page 3",
+    "body": "All of our posts. "
+    }, {
+    "id": 9,
+    "url": "/datascience/2017/01/15/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2017/01/15 - This is a placeholder for my second post "
+    }, {
+    "id": 10,
+    "url": "/2017/01/09/my-first-post.html",
+    "title": "My First Post",
+    "body": "2017/01/09 - Some sample content…This is a placeholder for my first post. I am just testing the structure of the blog. Title here "
+    }, {
+    "id": 11,
+    "url": "/2017/01/08/my-first-post.html",
+    "title": "My First Post",
+    "body": "2017/01/08 - Some sample content…This is a placeholder for my first post. I am just testing the structure of the blog. Title here "
+    }, {
+    "id": 12,
+    "url": "/2017/01/07/my-first-post.html",
+    "title": "Statistics and NN",
+    "body": "2017/01/07 - Some sample content…This is a placeholder for my first post. I am just testing the structure of the blog. Title here "
+    }, {
+    "id": 13,
+    "url": "/2017/01/06/my-first-post.html",
+    "title": "My AI Post",
+    "body": "2017/01/06 - Some sample content…This is a placeholder for my first post. I am just testing the structure of the blog. Title here "
+    }, {
+    "id": 14,
+    "url": "/2017/01/05/my-first-post.html",
+    "title": "My First Post",
+    "body": "2017/01/05 - Some sample content…This is a placeholder for my first post. I am just testing the structure of the blog. Title here "
+    }, {
+    "id": 15,
+    "url": "/2017/01/04/my-first-post.html",
+    "title": "My Statistics Post",
+    "body": "2017/01/04 - Some sample content…This is a placeholder for my first post. I am just testing the structure of the blog. Title here "
+    }, {
+    "id": 16,
+    "url": "/2017/01/03/my-first-post.html",
+    "title": "My First Post",
+    "body": "2017/01/03 - Some sample content…This is a placeholder for my first post. I am just testing the structure of the blog. Title here "
+    }, {
+    "id": 17,
+    "url": "/2017/01/02/my-first-post.html",
+    "title": "NN Post, AI and Stat",
+    "body": "2017/01/02 - Some sample content…This is a placeholder for my first post. I am just testing the structure of the blog. Title here "
+    }, {
+    "id": 18,
+    "url": "/physics/2016/01/30/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/30 - This is a placeholder for my second post "
+    }, {
+    "id": 19,
+    "url": "/physics/2016/01/29/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/29 - This is a placeholder for my second post "
+    }, {
+    "id": 20,
+    "url": "/physics/2016/01/28/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/28 - This is a placeholder for my second post "
+    }, {
+    "id": 21,
+    "url": "/physics/2016/01/27/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/27 - This is a placeholder for my second post "
+    }, {
+    "id": 22,
+    "url": "/physics/2016/01/26/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/26 - This is a placeholder for my second post "
+    }, {
+    "id": 23,
+    "url": "/physics/2016/01/25/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/25 - This is a placeholder for my second post "
+    }, {
+    "id": 24,
+    "url": "/physics/2016/01/24/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/24 - This is a placeholder for my second post "
+    }, {
+    "id": 25,
+    "url": "/physics/2016/01/23/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/23 - This is a placeholder for my second post "
+    }, {
+    "id": 26,
+    "url": "/physics/2016/01/22/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/22 - This is a placeholder for my second post "
+    }, {
+    "id": 27,
+    "url": "/physics/2016/01/21/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/21 - This is a placeholder for my second post "
+    }, {
+    "id": 28,
+    "url": "/physics/2016/01/20/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/20 - This is a placeholder for my second post "
+    }, {
+    "id": 29,
+    "url": "/physics/2016/01/19/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/19 - This is a placeholder for my second post "
+    }, {
+    "id": 30,
+    "url": "/physics/2016/01/18/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/18 - This is a placeholder for my second post "
+    }, {
+    "id": 31,
+    "url": "/physics/2016/01/17/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/17 - This is a placeholder for my second post "
+    }, {
+    "id": 32,
+    "url": "/physics/2016/01/16/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/16 - This is a placeholder for my second post "
+    }, {
+    "id": 33,
+    "url": "/physics/2016/01/15/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/15 - This is a placeholder for my second post "
+    }, {
+    "id": 34,
+    "url": "/physics/2016/01/14/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/14 - This is a placeholder for my second post "
+    }, {
+    "id": 35,
+    "url": "/physics/2016/01/13/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/13 - This is a placeholder for my second post "
+    }, {
+    "id": 36,
+    "url": "/physics/2016/01/12/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/12 - This is a placeholder for my second post "
+    }, {
+    "id": 37,
+    "url": "/physics/2016/01/11/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/11 - This is a placeholder for my second post "
+    }, {
+    "id": 38,
+    "url": "/physics/2016/01/10/my-second-post.html",
+    "title": "My Second Post",
+    "body": "2016/01/10 - This is a placeholder for my second post "
+    }];
+
+var idx = lunr(function () {
+    this.ref('id')
+    this.field('title')
+    this.field('body')
+
+    documents.forEach(function (doc) {
+        this.add(doc)
+    }, this)
+});
+function lunr_search(term) {
+    document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
+    if(term) {
+        document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + document.getElementById('lunrsearchresults').innerHTML;
+        //put results on the screen.
+        var results = idx.search(term);
+        if(results.length>0){
+            //console.log(idx.search(term));
+            //if results
+            for (var i = 0; i < results.length; i++) {
+                // more statements
+                var ref = results[i]['ref'];
+                var url = documents[ref]['url'];
+                var title = documents[ref]['title'];
+                var body = documents[ref]['body'].substring(0,160)+'...';
+                document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + "<li class='lunrsearchresult'><a href='" + url + "'><span class='title'>" + title + "</span><br /><span class='body'>"+ body +"</span><br /><span class='url'>"+ url +"</span></a></li>";
+            }
+        } else {
+            document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = "<li class='lunrsearchresult'>No results found...</li>";
+        }
+    }
+    return false;
+}
+</script>
+<style>
+    #lunrsearchresults {padding-top: 0.2rem;}
+    .lunrsearchresult {padding-bottom: 1rem;}
+    .lunrsearchresult .title {color: #e9910d;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <p><input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and press enter" /></p>
+</form>
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+                <!-- search option end -->
+              </div>
+              <div class="single-blog-page">
+                <!-- recent start -->
+                <div class="left-blog">
+                  <h4>recent post</h4>
+                  <div class="recent-post">
+                    
+                    <!-- start single post -->                    
+                      <div class="recent-single-post">
+                        <div class="post-img">
+                          <a href=/datascience/2017/01/15/my-second-post.html>
+                            <img src=/assets/img/blog/1.jpg alt="">
+                          </a>
+                        </div>
+                        <div class="pst-content">
+                          <p><a href=/datascience/2017/01/15/my-second-post.html> My Second Post </a></p>
+                        </div>
+                      </div>
+                    
+                    <!-- start single post -->                    
+                      <div class="recent-single-post">
+                        <div class="post-img">
+                          <a href=/2017/01/09/my-first-post.html>
+                            <img src=/assets/img/blog/1.jpg alt="">
+                          </a>
+                        </div>
+                        <div class="pst-content">
+                          <p><a href=/2017/01/09/my-first-post.html> My First Post </a></p>
+                        </div>
+                      </div>
+                    
+                    <!-- start single post -->                    
+                      <div class="recent-single-post">
+                        <div class="post-img">
+                          <a href=/2017/01/08/my-first-post.html>
+                            <img src=/assets/img/blog/1.jpg alt="">
+                          </a>
+                        </div>
+                        <div class="pst-content">
+                          <p><a href=/2017/01/08/my-first-post.html> My First Post </a></p>
+                        </div>
+                      </div>
+                    
+                    <!-- start single post -->                    
+                      <div class="recent-single-post">
+                        <div class="post-img">
+                          <a href=/2017/01/07/my-first-post.html>
+                            <img src=/assets/img/blog/1.jpg alt="">
+                          </a>
+                        </div>
+                        <div class="pst-content">
+                          <p><a href=/2017/01/07/my-first-post.html> Statistics and NN </a></p>
+                        </div>
+                      </div>
+                    
+                    <!-- End single post -->
+                  </div>
+                </div>
+                <!-- recent end -->
+              </div>
+              <div class="single-blog-page">
+                <div class="left-blog">
+                  <h4>categories</h4>
+                  <ul>
+                    <li>
+                      <a href="/blog/physics/">Physics</a>
+                    </li>
+                    <li>
+                      <a href="/blog/datascience/">Data Science</a>
+                    </li>
+                    <li>
+                      <a href="/blog/datacareteam/">DataCareTeam Projects</a>
+                    </li>
+                   </ul>
+                </div>
+              </div>
+              <!-- 
+              <div class="single-blog-page">
+                <div class="left-blog">
+                  <h4>archive</h4>
+                  <ul>
+                    <li>
+                      <a href="#">07 July 2016</a>
+                    </li>
+                    <li>
+                      <a href="#">29 June 2016</a>
+                    </li>
+                   </ul>
+                </div>
+              </div>
+              <div class="single-blog-page">
+                <div class="left-tags blog-tags">
+                  <div class="popular-tag left-side-tags left-blog">
+                    <h4>popular tags</h4>
+                    <ul>
+                      <li>
+                        <a href="#">Portfolio</a>
+                      </li>
+                      <li>
+                        <a href="#">Masonry</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <!-- End left sidebar -->
+          <div class="col-md-8 col-sm-8 col-xs-12" id="right">
+            <!--<div class="content-box clearfix">
+                  <!-- ======= Portfolio Section ======= -->
+    <div id="portfolio" class="portfolio-area area-padding fix">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h4>
+              Our posts about DataCareTeam projects. 
+
+              </h4>
+              <p>
+                Filter the posts in this page by tag, or change category. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row awesome-project-1 fix">
+          <!-- Start Portfolio -page -->
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="awesome-menu ">
+              <ul class="project-menu">
+                <li>
+                  <a href="#" class="active" data-filter="*">All</a>
+                </li>
+                <li>
+                  <a href="#" data-filter=".artificial-intelligence">AI</a>
+                </li>
+                <li>
+                  <a href="#" data-filter=".neural-networks">NeuralNetworks</a>
+                </li>
+                <li>
+                  <a href="#" data-filter=".statistics">Statistics</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row awesome-project-content">
+
+                        
+
+        </div>
+      </div>
+    </div><!-- End Portfolio Section -->
+
+
+    <div class="container">
+  <nav class="pagination" role="pagination">
+    <ul>
+      
+
+      
+      
+      
+    </ul>
+  </nav>
+</div>
+
+
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div><!-- End Blog Page -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <div class="footer-logo">
+                  <h2><span>e</span>Business</h2>
+                </div>
+
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                <div class="footer-icons">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-google"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>information</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
+                <div class="footer-contacts">
+                  <p><span>Tel:</span> +123 456 789</p>
+                  <p><span>Email:</span> contact@example.com</p>
+                  <p><span>Working Hours:</span> 9am-5pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>Instagram</h4>
+                <div class="flicker-img">
+                  <a href="#"><img src="/assets/img/portfolio/1.jpg" alt=""></a>
+                  <a href="#"><img src="/assets/img/portfolio/2.jpg" alt=""></a>
+                  <a href="#"><img src="/assets/img/portfolio/3.jpg" alt=""></a>
+                  <a href="#"><img src="/assets/img/portfolio/4.jpg" alt=""></a>
+                  <a href="#"><img src="/assets/img/portfolio/5.jpg" alt=""></a>
+                  <a href="#"><img src="/assets/img/portfolio/6.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-area-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="copyright text-center">
+              <p>
+                &copy; Copyright <strong>eBusiness</strong>. All Rights Reserved
+              </p>
+            </div>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eBusiness
+            -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="/assets/vendor/php-email-form/validate.js"></script>
+  <script src="/assets/vendor/appear/jquery.appear.js"></script>
+  <script src="/assets/vendor/knob/jquery.knob.js"></script>
+  <script src="/assets/vendor/parallax/parallax.js"></script>
+  <script src="/assets/vendor/wow/wow.min.js"></script>
+  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/assets/vendor/nivo-slider/js/jquery.nivo.slider.js"></script>
+  <script src="/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="/assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/assets/js/main.js"></script>
+
+</body>
+
+</html>
