@@ -1,15 +1,15 @@
 language: ruby
-# only run CI-builds on master branch
 branches:
   only:
   - master
 rvm:
 - 2.2.3
-# set execution permission on our build script
 before_script:
- - chmod +x ./script/cibuild.sh
-# path to our build script. 
-# Travis will run `bundle install` by default before running our script
-script: ./script/cibuild.sh
-exclude: [vendor]
+- chmod +x ./script/cibuild.sh
+script: "./script/cibuild.sh"
+exclude:
+- vendor
 sudo: false
+env:
+  global:
+    secure: WHlV2FfzXCHeA49WEHT8zYVnHv1kUEg1n90zPbNSEbPIZTUy/tudq/47ZZdQqntsZeJAOxn0liOVVl80pRD3gs0Rhy6g9FQHdBqr4vJV94UDifImIoHiuccEskywZr7PApEMIXePbtcjW+wNLOczUEeRFe3KG7kVDD4gzbWdWQTyVhCfNmVkeKR0DBS3XddWxwzS2sns18KwHMyD6j+9fR4TImlx6gOEvebrcll8UkkBLqPzdg9qoMjKmiHT8Jp/cxx44/R4PpJREjItrrwOVuovCwZV5lbSDbNpVj65k9aOh5jQkm8ACTNmvCENTOboK3vsxhHjPmBHT28ccUtBX+SQLuFd53jl2MhtRYO3Im11GWBvKsLRdxFvuAGhSk1VNuTsFxnWy60xn6hrzvpR3KMgfrHEsDXqcErw5U+M27HcXuaGKFF0XWPKtlAiEZf5+hFyvtUzhv9c3hTmdjx+sKZvWNqdXkQ+i6i+OWF8n9uekv47YZNusFqksapkZo4xJ6h30JaNsQzl+dwbt+jAZVDKp4zWq0w9yf63VZfl0eENyYIZD7q7YXjtH5QM+FCEtG+PFyEEkJqojbN2aIGO3eKJH1vqUw4P2TxZ/tBtKb9RNZgVrIkAy0AbLJMZUL0hVVAyZBulksIQqAnfYoHXfv6i2yHFF1kOEic/Czi/myM=
