@@ -2473,15 +2473,17 @@ span.email-notes {
 }
 
 .copyright > p {
+  font-size: 14px;
   margin-bottom: 0;
   color: #444;
 }
 
 .copyright a, .credits a {
-  color: #E8910B;
+  color: #1856d2;
 }
 
-.credits {
+.credits {  
+  font-size: 14px;
   padding-top: 5px;
   text-align: center;
 }
