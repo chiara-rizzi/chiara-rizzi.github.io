@@ -1497,6 +1497,7 @@ a.newer-posts:hover {
     margin: auto;
     float: left;
     overflow: scroll;
+    padding-right: 10px auto;
 }
 @media (min-width: 576px) {
     #left {
@@ -1507,3 +1508,22 @@ a.newer-posts:hover {
     }
 }
 
+.blogpost {
+  font-size: 16px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.blogpost h1 {
+  color: #263959;
+  text-align: center;
+}
+.blogpost h2 {
+  color: #263959;
+}
+.blogpost h3 {
+  color: #263959;
+}
+.blogpost h4 {
+  color: #263959;
+}
