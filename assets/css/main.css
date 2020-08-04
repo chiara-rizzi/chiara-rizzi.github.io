@@ -1487,14 +1487,23 @@ a.newer-posts:hover {
 }
 
 #left {
+    left: 0;
     float: left;
-    height: 800px;
+    height: 80vh;
     overflow: scroll;
     padding-right: 20px;
 }
 #right {
+    margin: auto;
     float: left;
     overflow: scroll;
 }
-
+@media (min-width: 576px) {
+    #left {
+        max-width: 300px;   
+        position: -webkit-sticky;
+        position: sticky;
+        top: 80px;                 
+    }
+}
 
