@@ -165,7 +165,17 @@ var documents = [{
     "url": "/blog/index.html",
     "title": "",
     "body": "All of our posts. "
-    }, ];
+    }, {
+    "id": 5,
+    "url": "/physics/2020/08/02/btagging.html",
+    "title": "AI to idendify jets from B-hadrons",
+    "body": "2020/08/02 - AI to idendify jets from  B-hadronsIntro: "
+    }, {
+    "id": 6,
+    "url": "/physics/2020/08/01/atlas-data-cleaning.html",
+    "title": "Data Cleaning in ATLAS",
+    "body": "2020/08/01 - Data Cleaning in ATLASIntro: "
+    }];
 
 var idx = lunr(function () {
     this.ref('id')
@@ -225,6 +235,30 @@ function lunr_search(term) {
                 <div class="left-blog">
                   <h4>recent posts</h4>
                   <div class="recent-post">
+                    
+                    <!-- start single post -->                    
+                      <div class="recent-single-post">
+                        <div class="post-img">
+                          <a href=/physics/2020/08/02/btagging.html>
+                            <img src=/assets/img/blog/1.jpg alt="">
+                          </a>
+                        </div>
+                        <div class="pst-content">
+                          <p><a href=/physics/2020/08/02/btagging.html> AI to idendify jets from B-hadrons </a></p>
+                        </div>
+                      </div>
+                    
+                    <!-- start single post -->                    
+                      <div class="recent-single-post">
+                        <div class="post-img">
+                          <a href=/physics/2020/08/01/atlas-data-cleaning.html>
+                            <img src=/assets/img/blog/1.jpg alt="">
+                          </a>
+                        </div>
+                        <div class="pst-content">
+                          <p><a href=/physics/2020/08/01/atlas-data-cleaning.html> Data Cleaning in ATLAS </a></p>
+                        </div>
+                      </div>
                     
                     <!-- End single post -->
                   </div>
